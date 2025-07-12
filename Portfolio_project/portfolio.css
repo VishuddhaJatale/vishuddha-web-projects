@@ -1,0 +1,126 @@
+:root {
+  --bg-dark: #16213E;
+  --card-bg: #22335D;
+  --accent: #00CFFF;
+  --text-light: #E0E7F1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: var(--accent);
+  color: var(--bg-dark);
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+header h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Sections */
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Headings */
+h2 {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* About Section */
+#about img {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid var(--accent);
+}
+#about p {
+  margin-top: 15px;
+  text-align: justify;
+}
+
+/* Skills */
+#skills ul {
+  list-style: square outside;
+  padding-left: 20px;
+}
+#skills li {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+/* Projects */
+.project {
+  background-color: #2d3a5d;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid var(--accent);
+}
+
+/* Resume Button */
+#resume a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 30px;
+  background-color: var(--accent);
+  color: var(--bg-dark);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+#resume a:hover {
+  background-color: #00B3E6;
+  transform: scale(1.05);
+}
+
+/* Contact Info */
+#contact p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--accent);
+  color: var(--bg-dark);
+  margin-top: 40px;
+  font-weight: bold;
+}
